@@ -25,14 +25,15 @@ class _SecondScreenState extends State<SecondScreen> {
               upper_container('images/fitladyo.png', bgtwo,
                   MediaQuery.of(context).size.width),
               lower_container(
-                context,
-                ThirdScreen(),
+                  context,
+                  ThirdScreen(),
                   MediaQuery.of(context).size.width,
                   MediaQuery.of(context).size.height,
                   titleStyle,
                   descStyle,
                   'Customize',
                   'Feel free to adjust your workout & diet settings according to your comfort')
+                  
             ],
           ),
         ),
