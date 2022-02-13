@@ -14,6 +14,8 @@ Text firstTitle = Text("Welcome!", style: titleStyle);
 Text secondTitle = Text("Customize", style: titleStyle);
 Text thirdTitle = Text("Let's go...", style: titleStyle);
 
+List<Text> titles = [firstTitle, secondTitle, thirdTitle];
+
 Text firstDescription = Text(
     "Explore the all new way to build your fitness & find the perfect fit for you.",
     style: descStyle);
@@ -25,3 +27,9 @@ Text secondDescription = Text(
 Text thirdDescription = Text(
     "GEt the new fitness updates everyday & improve performance.",
     style: descStyle);
+
+List<Text> descriptions = [
+  firstDescription,
+  secondDescription,
+  thirdDescription
+];
