@@ -1,3 +1,4 @@
+import 'package:befitapp/screen_one.dart';
 import 'package:flutter/material.dart';
 import 'package:befitapp/home_page.dart';
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const BeFitApp(),
+      home: const ScreenOne (),
     );
   }
 }

@@ -13,7 +13,7 @@ Widget upper_container(String image, Color color,var width ){
           width:width,
           height: 400,
           color: color,
-          child: Image.asset('images/gympics.png', width: 300,height: 600,),
+          child: Image.asset(image, width: 300,height: 600,),
         ),
 
       ],
