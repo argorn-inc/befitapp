@@ -15,15 +15,16 @@ class _BeFitAppState extends State<BeFitApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: SingleChildScrollView(
         child: Container(
           width: double.maxFinite,
           height: double.maxFinite,
           child: Stack(
             children: [
-              upper_container('images/', bgone, MediaQuery.of(context).size.width),
-              lower_container(MediaQuery.of(context).size.width, MediaQuery.of(context).size.height, titleStyle, descStyle)
+              upper_container(
+                  'images/', bgone, MediaQuery.of(context).size.width),
+              lower_container(MediaQuery.of(context).size.width,
+                  MediaQuery.of(context).size.height, titleStyle, descStyle)
             ],
           ),
         ),

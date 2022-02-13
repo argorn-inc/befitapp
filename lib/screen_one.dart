@@ -23,12 +23,15 @@ class _ScreenOneState extends State<ScreenOne> {
           child: Stack(
             children: [
               upper_container(
+                
                 'images/fitladyo.png',
+                
                 bgone,
                 MediaQuery.of(context).size.width,
               ),
               lower_container(MediaQuery.of(context).size.width,
-                  MediaQuery.of(context).size.height, titleStyle, descStyle)
+                  MediaQuery.of(context).size.height, titleStyle, descStyle),
+                  
             ],
           ),
         ),
