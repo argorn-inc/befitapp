@@ -1,33 +1,63 @@
 import 'package:flutter/material.dart';
-import 'package:befitapp/variables.dart';
+import 'package:befitapp/buttons.dart';
 
-Widget nextBtn() {
-  return OutlinedButton(
-    style: OutlinedButton.styleFrom(
-        backgroundColor: const Color.fromARGB(255, 48, 46, 46),
-        minimumSize: const Size(120, 50),
-        shape: const StadiumBorder()),
-    onPressed: () {},
-    // ignore: prefer_const_constructors
-    child: Text(
-      "Next",
-      style: const TextStyle(color: Colors.white, fontSize: 20),
+Widget upper_container(String image, Color color,var width ){
+  return Positioned(
+
+    child: Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+
+      children: [
+
+        Container(
+          width:width,
+          height: 400,
+          color: color,
+          child: Image.asset('images/gympics.png', width: 300,height: 600,),
+        ),
+
+      ],
     ),
   );
 }
 
-Widget skipBtn() {
-  return TextButton(
-    style: OutlinedButton.styleFrom(
-        minimumSize: const Size(120, 50), shape: const StadiumBorder()),
-    onPressed: () {},
-    // ignore: prefer_const_constructors
-    child: Text(
-      "Skip",
-      style: const TextStyle(
-        fontSize: 20,
-        color: Color.fromARGB(255, 167, 178, 202),
-      ),
-    ),
-  );
+
+Widget lower_container(var width, var height, TextStyle titleStyle, TextStyle descStyle){
+  return Positioned(
+      top: 300,
+      child: Container(
+
+        width: width,
+        height: height,
+
+        decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.only(topRight: Radius.circular(30), topLeft: Radius.circular(30))
+        ),
+        child: Column(
+
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            SizedBox(height: 30,),
+            Text('Welcome!', style: titleStyle,),
+            SizedBox(height: 20,),
+            Container(
+              margin:EdgeInsets.fromLTRB(10, 0, 10, 0) ,
+              child: Text('Explore the all new way to build your fitness & find the perfect fit for you', style: descStyle,textAlign: TextAlign.center,)
+              ,
+            ),
+
+            Padding(padding: EdgeInsets.only(left: 10, right: 10),
+              child: Row(
+
+                children: [
+                  skipBtn(),
+                  Expanded(child: Container()),
+                  nextBtn()
+                ],
+              ),
+            )
+          ],
+        ),
+      ));
 }
