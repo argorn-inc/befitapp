@@ -1,9 +1,7 @@
-import 'dart:js';
-
 import 'package:flutter/material.dart';
 import 'package:befitapp/buttons.dart';
 
-Widget upper_container(String bgImageSrc, Color color, var width) {
+Widget upperContainer(String bgImageSrc, Color color, var width) {
   Image bgImage = Image.asset(
     "images/$bgImageSrc",
     height: 300,
@@ -24,7 +22,7 @@ Widget upper_container(String bgImageSrc, Color color, var width) {
   );
 }
 
-Widget lower_container(
+Widget lowerContainer(
     var width, var height, TextStyle titleStyle, TextStyle descStyle) {
   return Positioned(
       top: 300,

@@ -21,9 +21,9 @@ class _BeFitAppState extends State<BeFitApp> {
           height: double.maxFinite,
           child: Stack(
             children: [
-              upper_container(
+              upperContainer(
                   'fit.png', bgone, MediaQuery.of(context).size.width),
-              lower_container(MediaQuery.of(context).size.width,
+              lowerContainer(MediaQuery.of(context).size.width,
                   MediaQuery.of(context).size.height, titleStyle, descStyle)
             ],
           ),
