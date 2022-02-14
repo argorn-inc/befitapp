@@ -8,7 +8,7 @@ TextStyle titleStyle = const TextStyle(
 
 TextStyle descStyle = const TextStyle(
   fontSize: 20,
-  fontFamily: "Montserrat",
+  fontFamily: "Serif",
 );
 Text firstTitle = Text("Welcome!", style: titleStyle);
 Text secondTitle = Text("Customize", style: titleStyle);
