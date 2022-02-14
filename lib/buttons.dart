@@ -8,14 +8,12 @@ Widget nextBtn() {
         minimumSize: const Size(120, 50),
         shape: const StadiumBorder()),
     onPressed: () {},
+    
     // ignore: prefer_const_constructors
     
-    child: Padding(
-      padding: const EdgeInsets.only(top :200.0),
-      child: Text(
-        "Next",
-        style: const TextStyle(color: Colors.white, fontSize: 20),
-      ),
+    child: Text(
+      "Next",
+      style: const TextStyle(color: Colors.white, fontSize: 20),
     ),
   );
 }

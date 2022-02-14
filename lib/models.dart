@@ -10,10 +10,10 @@ Widget upper_container(String image, Color color,var width ){
       children: [
 
         Container(
-          width:width,
+          width: width,
           height: 400,
           color: color,
-          child: Image.asset('images/ScreenOne.jpg', width: 300,height: 600,),
+          child: Image.asset('images/ScreenOne.jpg', width: 400,height: 600,),
         ),
 
       ],
