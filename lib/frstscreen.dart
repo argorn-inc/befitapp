@@ -12,11 +12,11 @@ class frstSreen extends StatelessWidget {
         children:[ 
           Container(
             height: MediaQuery.of(context).size.height*0.6,
-          child :Image.asset('ScreenOne.jpg'),
+          child :Image.asset('images/ScreenOne.jpg'),
         ),
           Column(
             children: [
-              
+
             ],
           )
         ],
