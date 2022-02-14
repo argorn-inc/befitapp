@@ -12,7 +12,7 @@ class ThirdScreen extends StatelessWidget {
         ),
         body: Center(
           child: const Text(
-            'This is the Third Screen\'s skeleton',
+            'This is the Third Screens skeleton',
           ),
         ),
       ),
